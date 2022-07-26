@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "npm run test",
-    "gen-types": "graphql-codegen --config codegen.yml"
+    "gen-types": "graphql-codegen --config codegen.yml",
+    "start": "ts-node server.ts"
   },
   "repository": {
     "type": "git",
