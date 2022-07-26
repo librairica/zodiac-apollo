@@ -4,7 +4,8 @@
   "description": "astrological contacts app",
   "main": "index.js",
   "scripts": {
-    "test": "npm run test"
+    "test": "npm run test",
+    "gen-types": "graphql-codegen --config codegen.yml"
   },
   "repository": {
     "type": "git",
@@ -21,5 +22,9 @@
     "graphql": "^16.5.0",
     "typescript": "^4.7.4",
     "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "@graphql-codegen/typescript": "2.7.2",
+    "@graphql-codegen/cli": "2.10.0"
   }
 }
