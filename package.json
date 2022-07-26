@@ -19,6 +19,8 @@
   "homepage": "https://github.com/librairica/zodiac-apollo#readme",
   "dependencies": {
     "@graphql-codegen/cli": "^2.10.0",
+    "apollo-server-express": "^3.10.0",
+    "express": "^4.18.1",
     "graphql": "^16.5.0",
     "typescript": "^4.7.4",
     "uuid": "^8.3.2"
