@@ -10,14 +10,15 @@ scalar timestamp
     firstName: String!
     lastName: String!
     birthday: Date
-    birthTime: timestamp
+    birthTimestamp: timestamp
+    sunSignEmoji: String
   }
   input ContactInput {
     id: ID!
     firstName: String
     lastName: String
     birthday: String
-    birthTime: String
+    sunSignEmoji: String
   }
   type Query {
     getContact(ContactId: ID!): Contact!
