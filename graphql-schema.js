@@ -1,6 +1,6 @@
-const { ApolloServer, gql } = require("apollo-server");
+const { gql } = require("apollo-server");
 
-//GraphQL Schemas
+//GraphQL Schema
 const typeDefs = gql`
 scalar Date
 scalar timestamp
@@ -31,3 +31,5 @@ scalar timestamp
     deleteContacts: [Contact!]!
   }
 `;
+
+module.exports = typeDefs;
