@@ -6,7 +6,7 @@
   "scripts": {
     "test": "npm run test",
     "gen-types": "graphql-codegen --config codegen.yml",
-    "start": "node apollo-server.js"
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",

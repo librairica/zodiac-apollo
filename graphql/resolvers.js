@@ -18,11 +18,15 @@ module.exports = {
 
   Mutation: {
       async createContact(_, { ContactInput }) {
+        console.log("createContact called")
+
     // destructure the body from our args.
     // create a new Contact, save and return that contact
     // created is the date.
     try {
       const { firstName, lastName, birthday } = ContactInput;
+      console.log("ContactInput is " + ContactInput)
+
       const newContact = new Contact({
           firstName,
           lastName,
@@ -35,15 +39,15 @@ module.exports = {
       }
     },
 
-    async deleteContact(_, { contactId }) {
+    async deleteContact(_, { ContactId }) {
       // Find the contact by its Id and delete it.
       try {
-        const contact = await Contact.findById(contactId);
+        const contact = await Contact.findById(ContactId);
         if (contact) {
             await contact.delete();
-            return 'Contact deleted!';
+            return contact;
         } else {
-            return 'Contact does not exist'
+          throw new Error("Contact does not exist");
         }
       } catch (err) {
         throw new Error(err);
