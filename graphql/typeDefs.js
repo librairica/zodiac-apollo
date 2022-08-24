@@ -9,6 +9,7 @@ module.exports = gql`
     firstName: String!
     lastName: String!
     birthday: Date
+    sunSign: Sign
   }
 
   input ContactInput {
