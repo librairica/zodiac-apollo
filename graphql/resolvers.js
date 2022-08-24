@@ -17,16 +17,12 @@ module.exports = {
   },
 
   Mutation: {
-      async createContact(_, { ContactInput }) {
-        console.log("createContact called")
-
+    async createContact(_, { ContactInput }) {
     // destructure the body from our args.
     // create a new Contact, save and return that contact
     // created is the date.
     try {
       const { firstName, lastName, birthday } = ContactInput;
-      console.log("ContactInput is " + ContactInput)
-
       const newContact = new Contact({
           firstName,
           lastName,

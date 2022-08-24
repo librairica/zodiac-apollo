@@ -1,2 +1,2 @@
 # zodiac-apollo
-an astrological contacts app
+the backend for zodiac contacts--an astrological contacts app

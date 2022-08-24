@@ -15,7 +15,6 @@ module.exports = gql`
   }
 
   input ContactInput {
-    id: ID!
     firstName: String
     lastName: String
     birthday: String
