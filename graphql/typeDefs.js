@@ -38,7 +38,7 @@ module.exports = gql`
     VIRGO
     LIBRA
     SCORPIO
-    SAGGITARIUS
+    SAGITTARIUS
     CAPRICORN
     AQUARIUS
     PISCES
