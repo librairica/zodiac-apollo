@@ -9,17 +9,12 @@ module.exports = gql`
     firstName: String!
     lastName: String!
     birthday: Date
-    birthTimestamp: timestamp
-    sunSign: Sign
-    sunSignEmoji: String
   }
 
   input ContactInput {
     firstName: String
     lastName: String
-    birthday: String
-    sunSign: Sign
-    sunSignEmoji: String
+    birthday: Date
   }
 
   type Query {
