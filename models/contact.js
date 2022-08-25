@@ -3,7 +3,8 @@ const { model, Schema } = require("mongoose");
 const contactSchema = new Schema({
   firstName: String,
   lastName: String,
-  birthday: Date
+  birthday: Date,
+  sunSign: String
 });
 
 module.exports = model("Contact", contactSchema);
